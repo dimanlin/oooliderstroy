@@ -1,0 +1,167 @@
+div.yjsg-newsitems {
+}
+div.yjsg-newsitems .yjsg-blog_f, div.yjsg-newsitems .yjsg-blog_c, div.yjsg-newsitems .yjsg-blog_s {
+    padding: 0 0;
+}
+.news_item_f {
+    margin: 0 0 0 0;
+    position: relative;
+    z-index: 10;
+}
+.news_item_c {
+    margin: 0 0;
+    position: relative;
+    z-index: 10;
+}
+.news_item_s {
+    margin: 0 0;
+    position: relative;
+    z-index: 10;
+}
+.news_item_a {
+    margin: 0 0 0 !important;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+}
+div.title {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+div.title h1, div.title h2, h1.pagetitle, .componentheading {
+    font-size: 150%;
+}
+div.title h1, div.title h2 {
+    line-height: 1.5em;
+    margin: 5px 0 4px;
+    padding: 0 0 10px;
+    text-align: left;
+}
+.newsitem_text {
+    display: block;
+    padding: 0;
+}
+.newsitem_tools {
+    clear: both;
+    display: block;
+    margin: 0 !important;
+    overflow: hidden;
+    padding: 3px 0;
+    width: 100%;
+}
+.newsitem_info {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 70%;
+}
+.buttonheading {
+    display: block;
+    float: right;
+    overflow: hidden;
+    padding: 0;
+    width: 30%;
+}
+.buttonheading img {
+    border: 0 none;
+}
+.buttonheading .email, .buttonheading .print, .buttonheading .pdf {
+    float: right;
+    margin: 0 2px 0 0;
+    width: 16px;
+}
+.createby {
+    padding: 0 3px 0 0;
+}
+.createdate {
+    padding: 0 3px 0 0;
+}
+.newsitem_section {
+    padding: 0 3px 0 0;
+}
+.newsitem_section a {
+    padding: 0 3px 0 0;
+}
+.newsitem_category {
+    padding: 0 3px 0 0;
+}
+.newsitem_category a {
+    padding: 0 3px 0 0;
+}
+.newsitems_link {
+}
+.modifydate {
+    display: block;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 100%;
+}
+.components {
+    padding: 20px 0;
+}
+div.yjsg-newsitems .float-left {
+    float: left;
+    overflow: hidden;
+}
+div.yjsg-newsitems .float-right {
+    float: right;
+    overflow: hidden;
+}
+div.yjsg-newsitems .width20 {
+    width: 20%;
+}
+div.yjsg-newsitems .width25 {
+    width: 25%;
+}
+div.yjsg-newsitems .width33 {
+    width: 33.333%;
+}
+div.yjsg-newsitems .width50 {
+    width: 50%;
+}
+div.yjsg-newsitems .width100 {
+    width: 100%;
+}
+div.yjsg-newsitems .yjsg-leadingarticles {
+    overflow: hidden;
+}
+.yjsg-morearticles {
+    clear: both;
+    display: block;
+    margin: 10px 0;
+}
+.yjsg-morearticles h3 {
+    padding: 0 0 10px;
+}
+div.yjsg-pagination {
+    text-align: center;
+}
+.categorylist {
+    padding: 0 5px;
+}
+.description {
+    font-size: 140%;
+}
+span.article_separator {
+    clear: both;
+    display: block;
+    height: 15px;
+}
+div.yjsg-newsitems div.yjsg-pagination p.yjsg-results {
+}
+div.yjsg-newsitems div.multicolumns div.news_item_f, div.yjsg-newsitems div.multicolumns div.news_item_c, div.yjsg-newsitems div.multicolumns div.news_item_s {
+    margin: 0 5px 5px;
+}
+div.yjsg-newsitems div.multicolumns div.first div.news_item_f, div.yjsg-newsitems div.multicolumns div.first div.news_item_c, div.yjsg-newsitems div.multicolumns div.first div.news_item_s {
+    margin-left: 0;
+}
+div.yjsg-newsitems div.multicolumns div.last div.news_item_f, div.yjsg-newsitems div.multicolumns div.last div.news_item_c, div.yjsg-newsitems div.multicolumns div.last div.news_item_s {
+    margin-right: 0;
+}
+div.yjsg-newsitems div.yjsg-morearticles {
+    margin: 10px 0;
+}
+

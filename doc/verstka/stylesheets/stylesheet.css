@@ -1,0 +1,125 @@
+.top_image {
+ 	background:url(images/kond_title.jpg);
+}
+
+#MozaicSlider {
+	display:block;
+	position:relative;
+	margin:0px auto;
+	overflow:hidden;
+	background:#121212;
+}
+
+#MozaicSlider .slide {
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+}
+
+#MozaicSlider .slide .info {
+	display:block;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	background:url(../images/intro_bg.png) repeat;
+	color:#FFFFFF;
+	font-size:12px;
+	padding:10px;
+	z-index:2;
+}
+
+#MozaicSlider h3 {
+	color:#fff;
+	font: 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+div#MozaicNav {
+	text-align:center;
+	overflow:hidden;
+	display:block;
+	margin:0px 0 0 0;
+	height:55px;
+	padding:0;
+	background:url(../images/shadow.png) no-repeat left top;
+}
+
+ul#MozaicNavigation {
+	display:block;
+	position:relative;
+	clear:both;
+	width:auto;
+	overflow:hidden;
+	text-align:center;
+	margin:37px 0 0 0;
+	padding:0;
+	list-style-type:none;
+	height:15px;
+}
+
+ul#MozaicNavigation li {
+	margin:0 !Important;
+	padding:0 !Important;
+	list-style-type:none;
+	background:none;
+	text-align:center;
+	overflow:hidden;
+}
+
+ul#MozaicNavigation li, ul#MozaicNavigation li a {
+	display:inline;
+	position:relative;
+	width:13px;
+	height:13px;
+	margin-left:2px;
+	overflow:hidden;
+}
+
+ul#MozaicNavigation li a {
+	display:inline-block;
+	position:relative;
+	width:13px;
+	height:13px;
+	background-image:url(../images/bullet.png);
+	background-position:bottom center;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	font-size:13px;
+	line-height:13px;
+}
+
+div.info a.moz_read, div.info a.moz_read:visited {
+	position:absolute;
+	bottom:15px;
+	right:10px;
+	display:block;
+	color:#121212;
+	height:23px;
+	width:80px;
+	line-height:24px;
+	text-transform:uppercase;
+	font-size:9px;
+	font-weight:bold;
+	text-align:center;
+	background:url(../images/moz_read.png) no-repeat center center;
+}
+
+div.info a.moz_read:hover, div.info a.moz_read:focus {
+	color:#3f3f3f;
+}
+
+ul#MozaicNavigation li a.selected, ul#MozaicNavigation li a:hover {
+	background-position:top center;
+}
+
+.top_image {
+  width: 960px;
+  height: 258px;
+	background-image:url("../images/kond_title.jpg");
+}
+
+.yjsquare_mozslider .yjsquare_in, .yjround_mozslider .yjround_in, .yjround_mozslider .content, .yjround_mozslider .yjround .t, .yjround_mozslider .yjround .b div.bin, .yjround_mozslider, .yjsquare_mozslider .yjroundout, .moduletable_mozslider, .module_mozslider {
+	margin:0;
+	padding:0;
+}
