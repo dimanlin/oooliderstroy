@@ -1,0 +1,389 @@
+#centertop, #centerbottom {
+    clear: both;
+    margin: 0 auto;
+    text-align: left;
+}
+#sitehold {
+    clear: both;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+#header {
+    padding: 22px 0;
+    position: relative;
+    text-align: left;
+    z-index: 1000;
+}
+#logo, #logo_dark {
+    float: left;
+    overflow: hidden;
+    text-align: left;
+}
+#logo a, #logo_dark a {
+    display: block;
+    text-decoration: none;
+    text-indent: -7500px;
+    width: 100%;
+}
+#holder, #holder2, #holder3 {
+    height: 100% !important;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px 0;
+    text-align: center;
+}
+#leftblock, #midblock, #rightblock, #insetblock, #insetsholder_2t, #insetsholder_2b, #insetsholder_3t, #insetsholder_3b {
+    float: left;
+    height: 100% !important;
+    overflow: hidden;
+    text-align: left;
+}
+#holder2 #midblock {
+    float: left;
+}
+#holder2 #leftblock, #holder2 #rightblock, #holder2 #insetblock {
+    float: right;
+}
+#holder2 #insetsholder_2t {
+    float: left;
+}
+#holder2 #insetsholder_2b {
+    float: right;
+}
+#holder3 #midblock {
+    float: right;
+}
+#holder3 #leftblock, #holder3 #rightblock, #holder3 #insetblock {
+    float: left;
+}
+#holder3 #insetsholder_3t {
+    float: right;
+}
+#holder3 #insetsholder_3b {
+    float: left;
+}
+.clearm {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+#yjsgheadergrid {
+    float: right;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+#yjsg1, #yjsg2, #yjsg2_inside, #yjsg3, #yjsg4, #yjsg5, #yjsg6, #yjsg7, #yjsgbodytop, #yjsgbodybottom, #yjsg7_holder {
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+#yjsg7 {
+    padding: 0;
+}
+#yjsgbodytop, #yjsgbodybottom {
+    margin: 5px 0;
+    padding: 0 0 0;
+    width: 100%;
+}
+#yjsg2 {
+    padding: 0 0 0;
+}
+#yjsg2_inside {
+    margin: 0 auto 32px;
+}
+#yjsg7 .yjsgxhtml {
+    min-height: 245px;
+}
+#yjsg7 .yjsquare {
+    padding: 0 15px 10px;
+}
+#yjsg7 #user21 .yjsquare {
+    padding: 0 15px 10px 0;
+}
+#yjsg7 #user25 .yjsquare {
+    padding: 0 0 10px 15px;
+}
+#yjsg2.Mozaic {
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+}
+#yjsg2.Mozaic #yjsg2_inside {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0 auto;
+    padding: 0;
+}
+.yjsgxhtml {
+    clear: right;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.yjsgxhtml .yjsquare_in {
+}
+#yjsg1 #top5 {
+}
+.yjsgxhtml .yjsquare {
+    margin: 0;
+    padding: 0;
+}
+.yjplain p {
+    padding: 5px 10px;
+}
+#insetsholder_2t, #insetsholder_2b {
+    margin: 0 0 0;
+    padding: 0;
+}
+.inside {
+    margin: 0;
+    overflow: hidden;
+    padding: 0 3px;
+}
+#leftblock .inside, #rightblock .inside, #insetblock .inside {
+    padding: 0 0 0 15px;
+}
+.insidem {
+    margin: 0;
+    padding: 0 3px;
+}
+#footer, #footer_holder {
+    clear: both;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 0;
+    position: relative;
+    text-align: center;
+}
+#youjoomla {
+    clear: both;
+    overflow: hidden;
+    padding: 5px 0;
+    text-align: left;
+}
+#footmod {
+    clear: both;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+}
+#cp {
+    overflow: hidden;
+    padding: 2px 0;
+    text-align: left;
+}
+.yjsgcp span {
+    text-transform: capitalize;
+}
+.validators {
+    float: left;
+    text-align: left;
+}
+.yjsglogo {
+    height: 48px;
+    position: absolute;
+    right: 10px;
+    text-indent: -9999px;
+    top: 10%;
+    width: 229px;
+}
+#joomlacredit {
+    padding: 3px 10px;
+    text-align: left;
+}
+.yjsquare, .yjsquare_yj1, .yjsquare_yj2 {
+    clear: both;
+    display: block;
+    height: 100% !important;
+    margin: 5px 0 10px 0;
+    overflow: hidden;
+    padding: 0 0 10px;
+}
+.yjsquare h4, .yjsquare_yj1 h4, .yjsquare_yj2 h4, .yjsquare_mozslider h4, .yjsquare_yjnf3 h4 {
+    font-size: 150%;
+    margin: 5px;
+    overflow: hidden;
+    padding: 0 0 10px;
+    text-transform: capitalize;
+}
+#leftblock .yjsquare h4, #rightblock .yjsquare h4, #insetblock .yjsquare h4 {
+    margin: 5px 0;
+}
+.yjsquare h4 span, .yjsquare_yj1 h4 span, .yjsquare_yj2 h4 span, .yjsquare_mozslider h4 span, .yjsquare_yjnf3 h4 span {
+    overflow: hidden;
+    text-transform: capitalize;
+}
+.yjsquare_in, .yjsquare_yj1 .yjsquare_in, .yjsquare_yj2 .yjsquare_in {
+    overflow: hidden;
+    padding: 5px;
+}
+.yjsquare p, .yjsquare_yj1 p, .yjsquare_yj2 p {
+    overflow: hidden;
+    padding: 3px;
+}
+#footmod .yjsquare {
+    margin: 0;
+    padding: 0;
+}
+#footmod .yjsquare h4 {
+}
+#footmod .yjsquare h4 span {
+}
+#footmod li, #footmod li:hover {
+    background: none repeat scroll 0 0 transparent;
+    list-style-image: none;
+    list-style-type: none;
+}
+#footmod ul {
+    margin: 0;
+    padding: 0;
+}
+#footmod ul li {
+    display: inline;
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+#footmod ul li a {
+}
+#pathway {
+    padding: 3px 0;
+}
+#pathway .yjsg_breadcrumbs a.pathway {
+    margin: 0 5px 0 0;
+    padding: 0 15px 0 0;
+}
+#tools {
+    font-weight: bold;
+    height: 25px;
+    line-height: 19px;
+    margin: 0;
+    padding: 0 0 0;
+    position: absolute;
+    right: 4px;
+    text-align: left;
+    top: 0;
+    width: auto;
+    z-index: 10000;
+}
+#tools .tdir {
+    font-size: 80%;
+    margin: 0 0 4px;
+}
+#tools .fs {
+    font-size: 110%;
+    margin: 0 7px 0 0;
+}
+#tools img {
+}
+.pollbuttons {
+    margin: 0 auto;
+    text-align: center;
+}
+#modlgn_passwd, #modlgn_username {
+    height: 16px;
+    padding-left: 3px;
+    padding-top: 3px;
+    width: 95%;
+}
+.search {
+}
+.search .inputbox {
+}
+#yjsgheadergrid .bannergroup, #yjsgheadergrid .banner {
+    padding: 15px 0 0;
+    text-align: right;
+}
+div.yjsg-newsflash {
+    overflow: hidden;
+}
+div.yjsg-newsflash div.item {
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+div.yjsg-newsflash div.last {
+    padding-bottom: 0;
+}
+.yjsquare_yjnf3, .yjsquare_yjnf3 .yjsquare_in {
+    margin: 0;
+    padding: 0;
+}
+.yjsquare_yjnf3 h4 {
+    margin: 5px 5px 10px;
+}
+.yjnewsflash {
+    border: medium none;
+    font-size: 100%;
+    height: 1% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.yjnewsflash img {
+    border: 0 none;
+    margin: 0;
+    padding: 6px;
+}
+.nfimgpos {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.yjnewsflash_title {
+    display: block;
+    font-size: 150%;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 15px 0;
+}
+span.yjnsreadon {
+    clear: both;
+    display: block;
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    margin: 10px 0 0 !important;
+    padding: 0 0 0 10px !important;
+}
+a.yjns_rm {
+    border: 0 none;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px 0 0 !important;
+}
+ul.quick_nav {
+    background: none repeat scroll 0 0 transparent;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.quick_nav li {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 50%;
+}
+ul.quick_nav li a {
+    display: block;
+    height: 26px;
+    line-height: 20px;
+    padding: 5px 0 0 8px;
+    text-decoration: none;
+}
+.small_logo {
+    background: url("../images/gray/small_logo.png") no-repeat scroll left center transparent;
+    display: block;
+    float: right;
+    height: 61px;
+    width: 125px;
+}
+

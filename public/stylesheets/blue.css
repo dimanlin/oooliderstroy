@@ -1,0 +1,288 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*BODY ID'S USED FOR CSS FONT STYLES AND BASE SITE BODY STYLING */
+/* NOTE!!! BACKGROUND IMAGE , COLOR AND BACKGROUND COLOR DEFINED IN templates/youstudio/yjsgcore/yjsg_stylesw.php line 297 */
+body#stylef1, body#stylef2, body#stylef3, body#stylef4, body#stylef5, body#stylef6, body#stylef7, body#stylef8, body#stylef9, body#stylef10, body#stylef11, body#stylef12, body#stylef13, body#stylef14, body#stylef15, body#stylef16 { background-repeat:no-repeat; background-position:center top; }
+
+#logo { background:url(../images/blue/logo.png) no-repeat 0px 0px; }
+
+#logo_dark { background:url(../images/blue/logo_dark.png) no-repeat 0px 0px; }
+
+#yjsg2 { background: url(../images/yjsg2_shadow.png) no-repeat center bottom; }
+
+#yjsg2_inside { background:#fff; }
+
+#holder, #holder2, #holder3 { background: url(../images/light/titles_inset.gif) repeat-x left top; }
+
+#leftblock, #insetblock, #rightblock { }
+
+#pathway .yjsg_breadcrumbs a.pathway { background: url(../images/arrow.png) no-repeat right center; }
+
+#yjsg7 { background:#dddddd; border-top:1px solid #fff; }
+
+#yjsg7 .yjsgxhtml { background: url(../images/light/vertical_inset.gif) no-repeat right 15px; }
+
+#yjsg7 #user25 { background:none; }
+
+#footer { background:#fff; color:#121212; }
+
+.yjsglogo { background: url(../images/blue/yjsglogo.png) no-repeat center center; }
+
+#joomlacredit { background:#fff; }
+
+/*TEMPLATE CSS 
+--------------------- */
+/* SITE LINKS */
+a:link, a:visited { text-decoration: none; color:#121212; }
+
+/* SITE HOVERS */
+a:focus, a:hover { color:#3f95dc; text-decoration: none; }
+
+/* SITE HEADINGS */
+h1, h2, h3, h4, h5, h6 { color:#121212; }
+
+.small, .createdate, .modifydate, .createby { color:#121212; font-size:10px; font-weight:bold; font-style:italic; }
+
+/* SITE TITLE, NEWS ITEM TITLE, MORE ARTICLES */
+.pagetitle, div.title h1, div.title h2, .yjsg-morearticles h3 { color:#121212; background: url(../images/light/titles_inset.gif) repeat-x left bottom; }
+
+div.title h1 span, div.title h2 span { color:#3f95dc; }
+
+.yjsg-morearticles h3 { border:none; }
+
+/* NEWS ITEM TITLE WITH LINK*/
+div.title h1 a:link, div.title h1 a:visited, div.title h2 a:link, div.title h2 a:visited { color:#121212; }
+
+div.title h1 a:hover, div.title h1 a:focus, div.title h2 a:hover, div.title h2 a:focus { color:#3f95dc; }
+
+div.title h2 a span, div.title h2 a:visited span { color:#3f95dc; }
+
+div.title h2 a:hover span, div.title h2 a:focus span { color:#121212; }
+
+/* FORM ELEMENTS */
+/* ARTICLE TABLE OF CONTENTS */
+fieldset, .toclink { border:1px solid #c8c8c8; }
+
+/* FIELDSET IN MODULES */
+.yjsquare_in fieldset, .yjround_in fieldset { border:none; }
+
+/* INPUTBOXES */
+.inputbox, #userreminder .required { background: #FFFFFF; border: 1px solid #3f95dc; }
+
+.inputbox:hover, .inputbox:focus, #userreminder .required:hover, #userreminder .required:focus { background: #F7F7F7; border: 1px solid #c8c8c8; }
+
+/*BUTTONS
+--------------------- */
+.button, .validate { background:transparent url(../images/blue/poll_result.gif) no-repeat left center; color:#fff; }
+
+/* READ MORE LINKS */
+a.readon:link, a.readon:visited, span.yjnsreadon { background:url(../images/blue/readmore_l.gif) no-repeat left center; color:#fff; text-transform:uppercase; font-size:100%; font-weight:bold; text-shadow:1px 1px #2b7aba; }
+
+a.readon:hover, a.readon:focus, .pagenavbar a:hover { color:#121212; text-shadow:none; }
+
+/* ADDITIONAL SPAN READON CLASS FOR ROUND CORNERS */
+.readon span, a.yjns_rm, a.yjns_rm:visited { background:url(../images/blue/readmore.gif) no-repeat right center; font-size:80%; }
+
+/* PAGE NAVIGATION */
+a.pagenav, .pagenav_prev a, .pagenav_next a, .pagenavbar a, .back_button a { background:#3f95dc; border:1px solid #3f95dc; color:#fff; }
+
+a.pagenav:hover, .pagenav_prev a:hover, .pagenav_next a:hover, .pagenavbar a:hover, .back_button a:hover { color: #000; }
+
+/* POLL */
+.button#result, .button#vote { background:transparent url(../images/blue/poll_result.gif) no-repeat left center; color:#fff; text-shadow:1px 1px #2b7aba; }
+
+.button#vote { background:transparent url(../images/poll_vote.gif) no-repeat left center; text-shadow:none; }
+
+/* THIS TEMPLATE IS EQUIPED WITH  ROUND AND SQUARE CORNERS
+TO SEE ROUND CORNERS SIMPLY CHANGE THE MODULE GRID STYLE IN TEMPLATE MANAGER
+UNDER ACCORDION ADVANCED OPTIONS. SEE ALSO rounded.css FILE".
+
+/* ROUND MODULES STYLING
+--------------------- */
+/* ROUND IMAGE. YOU CAN CHANGE TO YOUR OWN. 1 IMAGE TECHNIQUE USED */
+.yjround .content, .yjround .t, .yjround .b, .yjround .b div { background:url(../images/light/rounded.png); }
+
+.yjround h4, .yjround_mozslider h4 { color:#121212; }
+
+/* TITLE SPANS FOR SECOND PART OF THE TITLE COLOR */
+.yjround h4 span, .yjround_mozslider h4 span { color:#3f95dc;  }
+
+/* SPECIFIC TEXT AND TITLE COLOR FOR GRIDS WITH DARK BACGROUND*/
+#yjsg1 .yjround .content, #yjsgheadergrid .yjround .content { }
+
+.yjround_in { }
+
+/*SQUARE MODULES STYLE
+--------------------- */
+.yjsquare h4, .yjsquare_mozslider h4, .yjsquare_yjnf3 h4 { color:#121212; background: url(../images/light/titles_inset.gif) repeat-x left bottom; }
+
+/* SPAN COLOR SHOWS FIRST */
+.yjsquare h4 span, .yjsquare_mozslider h4 span, .yjsquare_yjnf3 h4 span { color:#3f95dc; }
+
+.yjsquare { }
+
+.yjsquare_in { }
+
+/* ADDITIONAL MODULE STYLES */
+/* _yj1 */
+.yjsquare_yj1 h4 { color:#121212; background: url(../images/light/titles_inset.gif) repeat-x left bottom; }
+
+.yjsquare_yj1 h4 span { color:#121212; }
+
+.yjsquare_yj1 { background:#DDDDDD; }
+
+.yjsquare_yj1 .yjsquare_in { }
+
+/* _yj2 */
+.yjsquare_yj2 h4 { color:#3f95dc; background: url(../images/light/titles_inset.gif) repeat-x left bottom; }
+
+.yjsquare_yj2 h4 span { color:#3f95dc; }
+
+.yjsquare_yj2 { background:#fff; }
+
+.yjsquare_yj2 .yjsquare_in { }
+
+/*TOP MENU STYLE FOR SPLIT MENU, CSS DROPDOWN AND SMOOTH DROPDOWN
+--------------------- */
+/*MENU SUB TITILES. USED WHEN MENU TITLES SETTING IS ENABLED IN TEMPLATE MANAGER*/
+#horiznav ul li a span.menu_description { color:#908d8d; }
+
+#horiznav ul li.active a span.menu_description, #horiznav ul li a:hover span.menu_description, #horiznav ul li.sfHover a span.menu_description { color:#4F4F4F; }
+
+/*END SUB TITLES*/
+
+#horiznav ul li a { color: #0a0909;/* NORMAL LINKS COLOR */ background:none; }
+
+#horiznav ul li a:hover, #horiznav ul li:hover a, #horiznav ul li.sfHover a { color: #3f95dc;/* LINKS HOVER COLOR */ background:none; }
+
+#horiznav li#current a, #horiznav li#current a:hover, #horiznav li#current:hover a, #horiznav li#current.sfHover a, #horiznav li.active a { color: #3f95dc;/* ACTIVE LINKS COLOR */ background:none; }
+
+#horiznav li#current, #horiznav li#current:hover, #horiznav li#current.sfHover, #horiznav li.active { background: url(../images/blue/topmenu/active_r.png) no-repeat right center; }
+
+#horiznav ul li:hover li a, #horiznav ul li.sfHover li a, #horiznav ul li#current:hover li a, #horiznav ul li#current.sfHover li a, #horiznav ul li:hover ul ul li a, #horiznav ul ul li.active { color: #3f95dc;/* SUB LEVEL LINKS HOVER COLOR */ background-image: none; }
+
+#horiznav li:hover ul, #horiznav li li:hover ul, #horiznav li li li:hover ul, #horiznav li li li li:hover ul, #horiznav li.sfHover ul, #horiznav li li.sfHover ul, #horiznav li li li.sfHover ul, #horiznav li li li li.sfHover ul, #horiznav ul li:hover li a, #horiznav ul li.sfHover li a, #horiznav ul li:hover ul ul li a, #horiznav ul li.sfHover ul ul li a { background-color: #EEEEEE;/* SUB LEVEL BACKGROUND COLOR */ }
+
+#horiznav li ul li a:hover, #horiznav li ul li ul li a:hover, #horiznav li li:hover, #horiznav ul li li.sfHover, #horiznav li li.sfHover a, #horiznav ul li li:hover a, #horiznav ul li li:hover, #horiznav ul li li.sfHover, #horiznav ul li li#current a:hover, #horiznav li.haschild ul li#current.sfHover, #horiznav li.haschild ul li#current:hover, #horiznav ul li.haschild li#current a:hover { background-color: #ebeaea;/* SECOND LEVEL BACKGROUND  HOVER COLOR */ color: #121212;/* SUB LEVEL BACKGROUND TEXT HOVER COLOR */ background-image: none; }
+
+#horiznav ul li#current ul li a, #horiznav ul li#current ul li, #horiznav ul li#current ul li a:hover, #horiznav ul li#current ul li.hover #horiznav ul li#current ul li.sfHover, #horiznav ul li.haschild li#current a { color: #3f95dc;/* SUB LEVEL ACTIVE TEXT COLOR */ }
+
+#horiznav li li { border-bottom: 1px solid #cecece;/*SUB LEVEL BOTTOM LINE  */ border-top: 1px solid #fff; }
+
+#horiznav li ul { border: 1px solid #cecece;/*SUB LEVEL UL BORDER IF NEEDED*/ border-bottom:none; }
+
+#horiznav li, #horiznav { font-weight: bold; background:none; }
+
+#horiznav li { background: url(../images/blue/topmenu/normal_r.png) no-repeat right center; }
+
+#horiznav ul li:hover, #horiznav ul li.sfHover { background: url(../images/blue/topmenu/hover_r.png) no-repeat right center; }
+
+/*SUB LEVEL PARENT ITEM ARROWS*/
+#horiznav ul li ul li.haschild a.child, #horiznav ul li ul li a.child:hover { background-image:url(../images/blue/topmenu/arrow_right.gif); background-repeat:no-repeat; background-position:95% 50%; }
+
+/* SUB SUB ARROW */
+#horiznav ul li.active ul li a.child, #horiznav ul li#current.active a.child, #horiznav ul li#current.active a.child:hover { background-image:url(../images/blue/topmenu/arrow_right.gif); background-repeat:no-repeat; background-position:95% 50%; }
+
+/*TOP MENU STYLE FOR DROPLINE AND SMOOTH DROPLINE*/
+/* MENU SUB TITILES. USED WHEN MENU TITLES SETTING IS ENABLED IN TEMPLATE MANAGER */
+#horiznav_d ul li a span.menu_description { color:#908d8d; }
+
+#horiznav_d ul li.active a span.menu_description, #horiznav_d ul li a:hover span.menu_description, #horiznav_d ul li.sfHover a span.menu_description { color:#4F4F4F; }
+
+/*END SUB TITLES*/
+
+#horiznav_d { font-weight: bold; background:none; }
+
+#horiznav_d li { background:none; }
+
+#horiznav_d li a, #horiznav_d li .separator { background: url(../images/blue/topmenu/normal_r.png) no-repeat right center; color: #121212;/*TOP LEVEL NORMAL LINKS COLOR */ }
+
+#horiznav_d ul li ul { background:#EEEEEE;/*MUST BE USED FOR HOVER OVERLAPPING EFFECT*/ }
+
+#horiznav_d li.active, #horiznav_d li.active:hover, #horiznav_d li.active.sfHover, #horiznav_d li:hover, #horiznav_d li.sfHover { background:none; }
+
+#horiznav_d li.active a, #horiznav_d li.active .separator, #horiznav_d li.active a:hover, #horiznav_d li.active .separator:hover, #horiznav_d li:hover a, #horiznav_d li:hover .separator, #horiznav_d li.sfHover a, #horiznav_d li.sfHover .separator { background: url(../images/blue/topmenu/active_r.png) no-repeat right center; color: #3f95dc; /*TOP LEVEL ACTIVE LINK COLOR */ }
+
+#horiznav_d li.haschild li a:hover, #horiznav_d li.haschild li.active a, #horiznav_d li.haschild li a { color: #3f95dc;/*DROPLINE ACTIVE AND HOVER LINKS COLOR */ text-decoration:underline; background-image: url(../images/blue/topmenu/drop_sep.png); background-repeat:no-repeat; background-position:left center; }
+
+#horiznav_d li.haschild li a { color:#121212;/*DROPLINE NORMAL LINKS COLOR */ font-weight: bold; }
+
+/*SIDE MENU MODULE
+--------------------- */
+#mainlevel li a, .menu li a, a.mainlevel { background: url(../images/blue/mainlevel.png) no-repeat left top;/* LINKS BG IMAGE */ color:#121212;/* MENU NORMAL LINKS COLOR */ text-shadow:1px 1px #fff; }
+
+#mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel:hover, a.mainlevel#active_menu, #mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, .menu li a:hover, .menu li.active a { background: url(../images/blue/mainlevel.png) no-repeat left bottom;/* HOVER AND ACTIVE LINKS BG IMAGE */ }
+
+a.sublevel { background: url(../images/blue/bodyli.gif) no-repeat 5px 9px; /* SUB LEVELS LI IMAGE */ color: #3f95dc!Important; }
+
+a.sublevel:hover { text-decoration:underline; }
+
+#footmod a.mainlevel:hover, #footmod a.mainlevel:active, #footmod a.mainlevel:focus, #mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel#active_menu, a.sublevel, a.sublevel:hover, a.sublevel:active, a.sublevel:focus, #active_menu, a.mainlevel:hover, a.mainlevel:active, a.mainlevel:focus, ul li a:hover, li.active a, li.parent a { color:#3f95dc;/*HOVER AND ACTIVE LINK COLOR */ }
+
+li.active ul li a, a.sublevel#active_menu { color:#525252; /* MENU LI A AND MENU SUB LEVELS LINK COLOR */ }
+
+li.active ul li a:hover, li.active ul li.active a { color:#3f95dc;  /* MENU LI A HOVER AND ACTIVE LINK COLOR */ background: url(../images/blue/mainlevel.png) no-repeat left top; }
+
+ul li {/* SITES LI IMAGE */ background: url(../images/blue/bodyli.gif) no-repeat 0px 5px; }
+
+/*USER PAGES STYLE */
+#userlogin, #userlogout, #userregister, #userreminder { background:#fff; color:#3f95dc; border:1px solid #3f95dc; }
+
+#userlogin_wrap { border:1px dashed #ccc; }
+
+#login_frame { background:#fff; margin:0 auto; border:1px dashed #ccc; }
+
+/* IMAGE CAPTIONS */
+p.img_caption { background:#efefef; border:1px solid #ccc; text-shadow:1px 1px #fff; text-transform:uppercase; color:#5F5F5F; }
+
+/* YJNS 3.3 */
+a.yjnewsflash_title, .yjnewsflash_titl:visited { color:#121212; }
+
+a.yjnewsflash_title:hover, a.yjnewsflash_title:focus { color:#3f95dc; }
+
+a.yjns_rm, a.yjns_rm:visited { color:#fff!Important; text-shadow:1px 1px #2b7aba; }
+
+a.yjns_rm:hover, a.yjns_rm:focus { color:#121212!Important; text-shadow:none; }
+
+/* TYPO OVERRIDE */
+img.border, .yjnewsflash img { border:1px solid #fff; background:#fafafa; }
+
+a.read_small, a.read_small:visited { color:#3f95dc!Important; }
+
+a.read_small:hover, a.read_small:focus { color:#121212!Important; text-decoration:underline; }
+
+a.topscroll, a.topscroll:visited, a.yjlink, a.yjlink:visited { color:#3f95dc !Important; font-weight:bold; font-size:90%; }
+
+a.topscroll:hover, a.topscroll:focus, a.yjlink:hover, a.yjlink:focus { color:#121212!Important; }
+
+.small_logo { background: url(../images/small_logo.png) no-repeat left center; }
+
+div.info a.moz_read, div.info a.moz_read:visited { color:#3f95dc; }
+
+div.info a.moz_read:hover, div.info a.moz_read:focus { color:#121212; }
+
+ul.quick_nav li a { background: url(../images/blue/mainlevel.png) no-repeat left top; text-shadow:1px 1px #fff; }
+
+ul.quick_nav li a:hover { color:#3f95dc; }
+
+#footmod a:hover, #footmod a:focus { color:#3f95dc; }
+.validators a:hover, .validators a:focus { color:#3f95dc; }
+/* UNUSED */
+#centerbottom {}#yjsg1 {}#header {}#yjsgheadergrid {}#yjsg2 {}#yjsg3 {}#yjsg4 {}#yjsg5 {}#yjsg6 {}#pathway {}
+/*SEARCH INPUTBOX STYLING. CURRENTLY USING DEFAULT INPUT STYLE
+--------------------- */
+.search {}.search .inputbox {}
+/*LOGIN MODULE INPUTBOX CURRENTLY USING DEFAULT INPUT STYLE
+--------------------- */
+#modlgn_passwd, #modlgn_username {}#modlgn_passwd {}#modlgn_username {}#mod_login_remember {border: none;padding: 0!important;}
