@@ -19,6 +19,12 @@ ru:
     update: "Изменить"
   active: "Активен"
   activerecord: 
+    errors:
+      models:
+        taxonomy:
+          attributes:
+            name:
+              blank: не может быть пустым
     attributes: 
       address: 
         address1: "Адрес"
