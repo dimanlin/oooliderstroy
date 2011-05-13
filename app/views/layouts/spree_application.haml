@@ -2,7 +2,7 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     = render :partial => 'shared/head'
-  %body#stylef6{:style => "background-color: rgb(238, 238, 238); background-image: url(images/light/bg_gray.jpg); color: rgb(85, 85, 85);"}
+  %body#stylef6{:style => "background-color: rgb(238, 238, 238); background-image: url(/images/light/bg_gray.jpg); color: rgb(85, 85, 85);"}
     #sitehold{:style => "font-size:12px; width:960px;"}
       #centertop{:style => "font-size:12px; width:960px;"}
         / header
@@ -38,30 +38,6 @@
                   %li
                     %a{:href => "http://oooliderstroy.ru/index.php?option=com_content&amp;view=article&amp;id=72&amp;Itemid=121"}
                       %span Контакты
-                  %li.haschild
-                    %a.haschild{:href => "#"}
-                      %span Стили дизайна
-                    %ul{:style => "overflow: hidden; visibility: hidden; opacity: 0; height: 0px;"}
-                      %li
-                        %a{:href => "http://oooliderstroy.ru/?change_css=blue"}
-                          %span Голубой
-                      %li
-                        %a{:href => "http://oooliderstroy.ru/?change_css=red"}
-                          %span Красный
-                      %li
-                        %a{:href => "http://oooliderstroy.ru/?change_css=lime"}
-                          %span Лимонный
-                      %li.haschild
-                        %a.child{:href => "#"}
-                          %span Фон
-                        %ul{:style => "overflow: hidden; visibility: hidden; opacity: 0; height: 0px;"}
-                          %li
-                            %a{:href => "http://oooliderstroy.ru/?change_bg=dark"}
-                              %span Тёмный
-                          %li
-                            %a{:href => "http://oooliderstroy.ru/?change_bg=light"}
-                              %span Светлый
             / end top menu
         / end header
         = yield
-      = render :partial => 'shared/footer'
