@@ -1,0 +1,24 @@
+- @body_id = 'product-details'
+#yoo-zoo.yoo-zoo.product-default{:class => "product-default-кондиционеры"}
+  .items
+    .box-t1
+      .box-t2
+        .box-t3
+    .box-1
+      %h1= accurate_title
+      #product-images
+        = hook :product_images do
+          #main-image
+            = render 'image'
+          #thumbnails
+            = render 'thumbnails', :product => @product
+      #product-description
+        = hook :product_description do
+          = product_description(@product) rescue t("product_has_no_description")
+        = hook :product_properties do
+          = render 'properties'
+      = render 'taxons'
+    .box-b1
+      .box-b2
+        .box-b3
+

@@ -7,19 +7,17 @@
         %div
           %p
             = small_image(block_product, :style => "float: left;")
-          %h3 GC-S05CRI
-          %table.listParam{:border => "0"}
-            %tbody
-              %tr
-                %td Производительность охлаждения
-                %td 1.50 кВт
-              %tr
-                %td Уровень шума
-                %td 34/31/28 ДБ
-              %tr
-                %td Циркуляция воздуха
-                %td 310 м³/ч
+          - unless block_product.product_properties.blank?
+            %table.listParam{:border => "0"}
+              %tbody
+                %tr
+                  %td
+                    Цена
+                  %td
+                    = block_product.price.to_i
+                    Рублей
+                = render :partial => 'product_property', :collection => block_product.product_properties
     %p.pos-links
       %span.element.element-itemlink.first.last
-        %a{:href => "http://oooliderstroy.ru/index.php?option=com_zoo&amp;task=item&amp;item_id=1&amp;category_id=1&amp;Itemid=122"} Подробнее...
+        = link_to "Подробнее", block_product
 

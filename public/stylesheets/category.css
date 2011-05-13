@@ -16,6 +16,7 @@
 #yoo-zoo .width50 {
     float: left;
     width: 49.999%;
+    margin-bottom: 60px;
 }
 #yoo-zoo .alpha-index {
     background: url("../images/alpha_index.png") no-repeat scroll 0 0 transparent;
