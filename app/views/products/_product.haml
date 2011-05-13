@@ -1,0 +1,35 @@
+#centerbottom{:style => "font-size:12px; width:960px;"}
+  / MAIN LAYOUT HOLDER
+  #holder2
+    / messages
+    / end messages
+    / MID BLOCK
+    #midblock{:style => "width:100%;"}
+      .insidem
+        / component
+        #yoo-zoo.yoo-zoo.product-default{:class => "product-default-кондиционеры"}
+          .details.align-left
+            .box-t1
+              .box-t2
+                .box-t3
+            .box-1
+              %h1.title Кондиционеры
+              .description
+                %p
+                  %img{:border => "0", :height => "73", :src => "/images/kond_title.jpg", :style => "float: left;", :width => "283"}/
+                  Компактный корпус, стильный дизайн украсят интерьер Вашего помещения.
+            .box-b1
+              .box-b2
+                .box-b3
+          .items
+            .box-t1
+              .box-t2
+                .box-t3
+            .box-1
+              = render :partial => "block_product", :collection => @products
+            .box-b1
+              .box-b2
+                .box-b3
+        / end component
+        .clearm
+
