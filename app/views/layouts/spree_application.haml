@@ -9,35 +9,5 @@
         #header{:style => "height:70px;"}
           / end logo
           #yjsgheadergrid{:style => "width:73.5%;"}
-            / top menu
-            #top_menu{:style => "font-size:12px;"}
-              #horiznav
-                %ul.menunav
-                  %li#current.active
-                    %a{:href => "http://oooliderstroy.ru/"}
-                      %span Главная
-                  %li.haschild
-                    %a.haschild{:href => "http://oooliderstroy.ru/index.php?option=com_zoo&amp;view=frontpage&amp;Itemid=120"}
-                      %span Каталог
-                    %ul{:style => "overflow: hidden; visibility: hidden; opacity: 0; height: 0px;"}
-                      %li
-                        %a{:href => "http://oooliderstroy.ru/index.php?option=com_zoo&amp;view=category&amp;Itemid=122"}
-                          %span Кондиционеры
-                      %li
-                        %a{:href => "http://oooliderstroy.ru/index.php?option=com_zoo&amp;view=category&amp;Itemid=126"}
-                          %span Теплоизоляция
-                      %li
-                        %a{:href => "http://oooliderstroy.ru/index.php?option=com_zoo&amp;view=category&amp;Itemid=124"}
-                          %span ЦСП
-                      %li
-                        %a{:href => "http://oooliderstroy.ru/index.php?option=com_zoo&amp;view=category&amp;Itemid=125"}
-                          %span Пенополистирол
-                      %li
-                        %a{:href => "http://oooliderstroy.ru/index.php?option=com_zoo&amp;view=category&amp;Itemid=123"}
-                          %span Электроды
-                  %li
-                    %a{:href => "http://oooliderstroy.ru/index.php?option=com_content&amp;view=article&amp;id=72&amp;Itemid=121"}
-                      %span Контакты
-            / end top menu
-        / end header
+            = render :partial => "shared/main_navigation"
       = yield

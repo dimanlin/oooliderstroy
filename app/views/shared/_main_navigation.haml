@@ -1,0 +1,20 @@
+#top_menu{:style => "font-size:12px;"}
+  #horiznav
+    %ul.menunav
+      %li#current.active
+        - link_to root_url do
+          %span Главная
+      %li.haschild
+        %a.haschild{:href => "http://oooliderstroy.ru/index.php?option=com_zoo&amp;view=frontpage&amp;Itemid=120"}
+          %span Каталог
+        %ul{:style => "overflow: hidden; visibility: hidden; opacity: 0; height: 0px;"}
+          - ProductGroup.all.each do |product_group|
+            %li
+              - link_to "/pg/#{product_group.permalink}" do
+                %span
+                  = product_group.name
+                
+      %li
+        %a{:href => "http://oooliderstroy.ru/index.php?option=com_content&amp;view=article&amp;id=72&amp;Itemid=121"}
+          %span Контакты
+
