@@ -21,18 +21,7 @@
                     = product.name
                   %table.listParam{:border => "0"}
                     %tbody
-                      %tr
-                        %td Производительность охлаждения
-                        %td 2.10 кВт
-                      %tr
-                        %td Производительность обогрева
-                        %td 2.20 кВт
-                      %tr
-                        %td Уровень шума
-                        %td 32/28/25 ДБ
-                      %tr
-                        %td Циркуляция воздуха
-                        %td 380 м³/ч
+                      = render :partial => "shared/product_property", :collection => product.product_properties
             %p.pos-links
               %span.element.element-itemlink.first.last
                 = link_to "Подробнее...", product
