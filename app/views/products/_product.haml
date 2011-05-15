@@ -13,7 +13,8 @@
               .box-t2
                 .box-t3
             .box-1
-              %h1.title Кондиционеры
+              %h1.title
+                = @cached_product_group.name
               .description
                 %p
                   %img{:border => "0", :height => "73", :src => "/images/kond_title.jpg", :style => "float: left;", :width => "283"}/
