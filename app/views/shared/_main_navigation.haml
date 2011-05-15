@@ -8,11 +8,12 @@
         %a.haschild{:href => "#"}
           %span Каталог
         %ul{:style => "overflow: hidden; visibility: hidden; opacity: 0; height: 0px;"}
-          - ProductGroup.all.each do |product_group|
+          - get_taxonomies.each do |taxonomy|
+            - root_taxon = taxonomy.root
             %li
-              - link_to "/pg/#{product_group.permalink}" do
+              - link_to "/t/#{root_taxon.permalink}" do
                 %span
-                  = product_group.name
+                  = root_taxon.name
       %li
         %a{:href => "http://oooliderstroy.ru/index.php?option=com_content&amp;view=article&amp;id=72&amp;Itemid=121"}
           %span Контакты

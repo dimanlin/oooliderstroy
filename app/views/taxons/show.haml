@@ -1,0 +1,32 @@
+#centerbottom{:style => "font-size:12px; width:960px;"}
+  #holder2
+    #midblock{:style => "width:100%;"}
+      .insidem
+        #yoo-zoo.yoo-zoo.product-default{:class => "product-default-кондиционеры"}
+          .details.align-left
+            .box-t1
+              .box-t2
+                .box-t3
+            .box-1
+              %h1.title
+                = @taxon.name
+              .description
+                %p
+                  = image_tag(@taxon.icon.url, :style => "height: 73px; float: left; width: 283px")
+                  = @taxon.description
+          .items
+            .box-t1
+              .box-t2
+                .box-t3
+            .box-1
+              .row.first-row
+                - if @taxon.children.empty? || !params[:keywords].blank?
+                  = hook :taxon_products do
+                    = render :partial => "shared/products", :locals => {:products => @products, :taxon => @taxon }
+                - else
+                  = hook :taxon_children do
+                    = render :partial => "taxon", :collection => @taxon.children
+            .box-b1
+              .box-b2
+                .box-b3
+        .clearm
