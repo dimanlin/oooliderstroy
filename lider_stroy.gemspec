@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'lider_stroy'
+  s.name        = 'oooliderstroy'
   s.version     = '0.60.99'
   s.summary     = 'Add gem summary here'
   s.description = 'Add (optional) gem description here'
