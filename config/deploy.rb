@@ -45,6 +45,11 @@ namespace :deploy do
     run "cd #{root_path} && rake oooliderstroy:install"
   end
 
+  task :migrate, :roles => :web do
+    run "cd #{root_path} && RAILS_ENV='production' rake db:migrate"
+  end
+
+
 #   task :start do ; end
 #   task :stop do ; end
 #   task :restart, :roles => :app, :except => { :no_release => true } do
