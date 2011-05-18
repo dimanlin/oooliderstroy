@@ -1,4 +1,4 @@
-set :application, "lider_stroy"
+set :application, "oooliderstroy"
 set :repository,  "git://github.com/dimanlin/oooliderstroy.git"
 set :branch, "master"
 
@@ -15,7 +15,7 @@ role :web, "81.17.140.181"                          # Your HTTP server, Apache/e
 role :db,  "81.17.140.181", :primary => true # This is where Rails migrations will run
 
 # # Директория приложения на удалённом хостинге
-set :app_dir, "/var/www/#{application}/" # /home/myuser/myproject/
+set :app_dir, "/var/www/spree_project/#{application}/" # /home/myuser/myproject/
 
 # # Директория, куда будет делаться checkout из репозитория
 
