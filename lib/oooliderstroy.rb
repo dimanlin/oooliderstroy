@@ -1,5 +1,5 @@
 require 'spree_core'
-require 'lider_stroy_hooks'
+require 'oooliderstroy_hooks'
 
 module LiderStroy
   class Engine < Rails::Engine

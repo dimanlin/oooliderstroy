@@ -1,8 +1,8 @@
-namespace :lider_stroy do
+namespace :oooliderstroy do
   desc "Copies all migrations and assets (NOTE: This will be obsolete with Rails 3.1)"
   task :install do
-    Rake::Task['lider_stroy:install:migrations'].invoke
-    Rake::Task['lider_stroy:install:assets'].invoke
+    Rake::Task['oooliderstroy:install:migrations'].invoke
+    Rake::Task['oooliderstroy:install:assets'].invoke
   end
 
   namespace :install do

@@ -23,7 +23,7 @@ end
 desc "Default Task"
 task :default => [:spec, :cucumber ]
 
-spec = eval(File.read('lider_stroy.gemspec'))
+spec = eval(File.read('oooliderstroy.gemspec'))
 
 Rake::GemPackageTask.new(spec) do |p|
   p.gem_spec = spec
@@ -47,7 +47,7 @@ task :test_app do
     def install_gems
       inside "test_app" do
         run 'rake spree_core:install'
-        run 'rake lider_stroy:install'
+        run 'rake oooliderstroy:install'
       end
     end
 
@@ -59,7 +59,7 @@ task :test_app do
     def full_path_for_local_gems
       <<-gems
 gem 'spree_core', :path => \'#{File.join(File.dirname(__FILE__), "../spree/", "core")}\'
-gem 'lider_stroy', :path => \'#{File.dirname(__FILE__)}\'
+gem 'oooliderstroy', :path => \'#{File.dirname(__FILE__)}\'
       gems
     end
 
