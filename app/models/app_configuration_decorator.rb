@@ -20,7 +20,7 @@ AppConfiguration.class_eval do
   preference :logo, :string, :default => '/images/admin/bg/spree_50.png'
   preference :stylesheets, :string, :default => 'stylesheet.css,template.css,blue.css,category.css'
   preference :admin_interface_logo, :string, :default => "admin/bg/spree_50.png"
-  preference :allow_ssl_in_production, :boolean, :default => true
+  preference :allow_ssl_in_production, :boolean, :default => false
   preference :allow_ssl_in_development_and_test, :boolean, :default => false
   preference :allow_guest_checkout, :boolean, :default => true
   preference :alternative_billing_phone,  :boolean, :default => false # Request extra phone for bill addr
