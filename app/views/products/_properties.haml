@@ -1,5 +1,11 @@
 - unless @product_properties.empty?
   %table
+    %tr
+      %td
+        Цена:
+      %td
+        = @product.price
+        руб
     - for product_property in @product_properties
       %tr
         %td
