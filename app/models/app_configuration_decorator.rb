@@ -18,7 +18,7 @@ AppConfiguration.class_eval do
   preference :admin_pgroup_preview_size, :integer, :default => 10
   preference :products_per_page, :integer, :default => 10
   preference :logo, :string, :default => '/images/admin/bg/spree_50.png'
-  preference :stylesheets, :string, :default => 'stylesheet.css,template.css,blue.css,category.css,layout.css'
+  preference :stylesheets, :string, :default => 'stylesheet.css,template.css,blue.css,category.css,layout.css,menus.css'
   preference :admin_interface_logo, :string, :default => "admin/bg/spree_50.png"
   preference :allow_ssl_in_production, :boolean, :default => false
   preference :allow_ssl_in_development_and_test, :boolean, :default => false
