@@ -1,6 +1,6 @@
 AppConfiguration.class_eval do
 
-  preference :site_name, :string, :default => 'Spree Demo Site'
+  preference :site_name, :string, :default => 'oooliderstroy.ru'
   preference :default_seo_title, :string, :default => ''
   preference :site_url, :string, :default => 'oooliderstroy.ru'
   preference :default_locale, :string, :default => 'ru'
