@@ -50,7 +50,7 @@ namespace :deploy do
   end
 
   task :restart, :roles => :web do 
-    run "touch #{root_path}/tmp/restart.txt"
+    run "touch #{root_path}tmp/restart.txt"
   end
 
 
