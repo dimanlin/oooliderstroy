@@ -17,7 +17,8 @@ role :db,  "81.17.140.181", :primary => true # This is where Rails migrations wi
 
 
 after "deploy:update", "deploy:rake_oooliderstroy_install"
-after "deploy:rake_oooliderstroy_install", "deploy:migrate"
+after "deploy:rake_oooliderstroy_install", "deploy:delete_all_css"
+after "deploy:delete_all_css", "deploy:migrate"
 
 # # Директория приложения на удалённом хостинге
 #set :app_dir, "/var/www/spree_project/#{application}/" # /home/myuser/myproject/
@@ -51,6 +52,10 @@ namespace :deploy do
 
   task :restart, :roles => :web do 
     run "touch #{root_path}tmp/restart.txt"
+  end
+
+  task :delete_all_css, :roles => :web do
+    run "rm #{root_path}public/stylesheets/all.css"
   end
 
 
