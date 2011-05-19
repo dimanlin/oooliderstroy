@@ -1,0 +1,8 @@
+- unless @product_properties.empty?
+  %table
+    - for product_property in @product_properties
+      %tr
+        %td
+          = product_property.property.presentation
+        %td
+          = product_property.value
