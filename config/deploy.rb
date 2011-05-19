@@ -49,6 +49,10 @@ namespace :deploy do
     run "cd #{root_path} && RAILS_ENV='production' rake db:migrate"
   end
 
+  task :restart, :roles => :web do 
+    run "touch #{root_path}/tmp/restart.txt"
+  end
+
 
 #   task :start do ; end
 #   task :stop do ; end
