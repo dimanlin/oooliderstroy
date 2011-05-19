@@ -11,14 +11,12 @@
         .width50
           .teaser-item
             %h2.pos-title
-              %a{:href => "http://oooliderstroy.ru/index.php?option=com_zoo&amp;task=item&amp;item_id=2&amp;category_id=1&amp;Itemid=122", :title => "GC-S07HRI"} GC-S07HRI
+              = link_to product.name, product
             .pos-description
               .element.element-textarea.first.last
                 %div
                   %p
                     = small_image(product, :stile => "float: left;")
-                  %h3
-                    = product.name
                   %table.listParam{:border => "0"}
                     %tbody
                       = render :partial => "shared/product_property", :collection => product.product_properties
