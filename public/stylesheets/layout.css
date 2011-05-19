@@ -1,3 +1,20 @@
+#product-description {
+  max-width: 300px;
+}
+
+.product_table tr {
+  vertical-align:top;
+}
+
+.main_info {
+  float: left;
+}
+
+#taxon-crumbs {
+  float: right;
+  margin-right: 20px;
+}
+
 #centertop, #centerbottom {
     clear: both;
     margin: 0 auto;

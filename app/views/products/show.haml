@@ -7,17 +7,22 @@
         .box-t3
     .box-1
       %h1= accurate_title
-      #product-images
-        = hook :product_images do
-          #main-image
-            = render 'image'
-          #thumbnails
-            = render 'thumbnails', :product => @product
-      #product-description
-        = hook :product_description do
-          = product_description(@product) rescue t("product_has_no_description")
-        = hook :product_properties do
-          = render 'properties'
+      .main_info
+        %table.product_table
+          %tr
+            %td
+              #product-images
+                = hook :product_images do
+                  #main-image
+                    = render 'image'
+                  #thumbnails
+                    = render 'thumbnails', :product => @product
+            %td
+              #product-description
+                = hook :product_description do
+                  = product_description(@product) rescue t("product_has_no_description")
+                = hook :product_properties do
+                  = render 'properties'
       = render 'taxons'
     .box-b1
       .box-b2

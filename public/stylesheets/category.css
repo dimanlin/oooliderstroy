@@ -71,6 +71,7 @@
     border-left: 1px solid #C8CBCD;
     border-right: 1px solid #C8CBCD;
     overflow: hidden;
+    padding-left:20px;
 }
 #yoo-zoo div.box-b1 {
     background: url("../images/box.png") no-repeat scroll 0 -30px transparent;

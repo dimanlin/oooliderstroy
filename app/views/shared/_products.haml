@@ -16,7 +16,7 @@
               .element.element-textarea.first.last
                 %div
                   %p
-                    = small_image(product, :stile => "float: left;")
+                    = small_image(product, :style => "float: left;")
                   %table.listParam{:border => "0"}
                     %tbody
                       = render :partial => "shared/product_property", :collection => product.product_properties
