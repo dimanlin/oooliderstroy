@@ -182,8 +182,6 @@ UNDER ACCORDION ADVANCED OPTIONS. SEE ALSO rounded.css FILE".
 
 #horiznav li ul { border: 1px solid #cecece;/*SUB LEVEL UL BORDER IF NEEDED*/ border-bottom:none; }
 
-#horiznav li, #horiznav { font-weight: bold; background:none; }
-
 #horiznav li { background: url(../images/blue/topmenu/normal_r.png) no-repeat right center; }
 
 #horiznav ul li:hover, #horiznav ul li.sfHover { background: url(../images/blue/topmenu/hover_r.png) no-repeat right center; }
