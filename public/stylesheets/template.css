@@ -11,10 +11,6 @@
 || # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
 || #################################################################### ||
 \*======================================================================*/
-@import url("layout.css");        /*layout css file*/
-@import url("newsitems.css");     /*newsitems css file*/
-@import url("menus.css");         /*menu css file*/
-@import url("typo.css");          /*typo css file*/
 body { text-align:center; /*center hack*/ padding:0; margin:0px 0 0px 0; line-height:18px; background-color:#FFFFFF; }
 #stylef1 { font-family:"Bookman Old Style", serif; }
 #stylef2 { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
