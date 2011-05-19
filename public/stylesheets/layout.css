@@ -1,3 +1,7 @@
+.breadcrumbs li {
+  display:inline;
+}
+
 #product-description {
   max-width: 300px;
 }
