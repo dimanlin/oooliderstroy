@@ -12,7 +12,7 @@
                 = @taxon.name
               .description
                 %p
-                  = image_tag(@taxon.icon.url, :style => "height: 73px; float: left; width: 283px")
+                  = image_tag(@taxon.icon.url(:normal), :style => "height: 73px; float: left; width: 283px")
                   = @taxon.description
             .box-b1
               .box-b2

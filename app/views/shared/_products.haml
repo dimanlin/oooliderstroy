@@ -19,6 +19,12 @@
                     = small_image(product, :style => "float: left;")
                   %table.listParam{:border => "0"}
                     %tbody
+                      %tr
+                        %td
+                          Цена:
+                        %td
+                          = product.price
+                          руб.
                       = render :partial => "shared/product_property", :collection => product.product_properties
             %p.pos-links
               %span.element.element-itemlink.first.last
