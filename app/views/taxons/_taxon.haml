@@ -5,7 +5,10 @@
   %table
     %tr
       %td
-        = image_tag taxon.icon.url(:normal)
+        - unless taxon.parent.name == "Электроды"
+          = image_tag taxon.icon.url(:normal)
       %td
         - if taxon.parent.name == "Кондиционеры"
           = render :partial => "shared/conditioners", :locals => {:products => taxon_preview(taxon, 99), :taxon => taxon}
+        - elsif taxon.parent.name == "Электроды"
+          = render :partial => "shared/electrodes", :locals => {:products => taxon_preview(taxon, 99), :taxon => taxon}
