@@ -1,0 +1,31 @@
+- paginated_products = @searcher.products if params.key?(:keywords)
+- paginated_products ||= products
+- if products.empty?
+  = t(:no_products_found)
+- elsif params.key?(:keywords)
+  %h3= t(:search_results, :keywords => h(params[:keywords]))
+- if products.any?
+  %table{:border => 1}
+    %tr
+      %td
+        Модель
+      %td
+        Охлаждение, кВт
+      %td
+        Нагрев, кВт
+      %td
+        Цена,руб
+
+    - products.each do |product|
+      - product_properties = product.product_properties
+      - if Spree::Config[:show_zero_stock_products] || product.has_stock?
+        %tr
+          %td
+            = product.name
+          %td
+            = product.product_properties.last.value
+          %td
+            = product.product_properties.first.value
+          %td
+            = product.price
+
