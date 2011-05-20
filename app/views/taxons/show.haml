@@ -24,7 +24,9 @@
             .box-1
               .row.first-row
                 - if @taxon.children.empty? || !params[:keywords].blank?
-                  = hook :taxon_products do
+                  - if @taxon.name == "Пенополистирол"
+                    = render :partial => "shared/expanded_polystyrene", :locals => {:products => @products, :taxon => @taxon }
+                  - else
                     = render :partial => "shared/products", :locals => {:products => @products, :taxon => @taxon }
                 - else
                   = hook :taxon_children do
