@@ -8,4 +8,4 @@
           = image_tag "konder1.png"
       %td
         - if taxon.parent.name == "Кондиционеры"
-          = render :partial => "shared/conditioners", :locals => {:products => taxon_preview(taxon), :taxon => taxon}
+          = render :partial => "shared/conditioners", :locals => {:products => taxon_preview(taxon, 99), :taxon => taxon}
