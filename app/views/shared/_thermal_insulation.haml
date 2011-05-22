@@ -1,0 +1,48 @@
+- paginated_products = @searcher.products if params.key?(:keywords)
+- paginated_products ||= products
+- if products.empty?
+  = t(:no_products_found)
+- elsif params.key?(:keywords)
+  %h3= t(:search_results, :keywords => h(params[:keywords]))
+- if products.any?
+  - first = true
+  %p
+    = taxon.description
+  %table{:border => 1}
+    %tr
+      %td
+        Длинна, мм
+      %td
+        Ширена, мм
+      %td
+        Толщина, мм
+      %td
+        Кол-во штук в упаковке
+      %td
+        В упаковке m2
+      %td
+        В упаковке м3
+      %td
+        руб. за м2
+      %td
+        руб. за м3
+    - products.each do |product|
+      - product_properties = product.product_properties
+      - if Spree::Config[:show_zero_stock_products] || product.has_stock?
+        %tr
+          %td
+            = product.product_properties[2].value
+          %td
+            = product.product_properties[6].value
+          %td
+            = product.product_properties[5].value
+          %td
+            = product.product_properties[3].value
+          %td
+            = product.product_properties[0].value
+          %td
+            = product.product_properties[1].value
+          %td
+            = product.price
+          %td
+            = product.product_properties[7].value
