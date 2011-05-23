@@ -10,39 +10,16 @@
     = taxon.description
   %table{:border => 1}
     %tr
-      %td
-        Длинна, мм
-      %td
-        Ширена, мм
-      %td
-        Толщина, мм
-      %td
-        Кол-во штук в упаковке
-      %td
-        В упаковке m2
-      %td
-        В упаковке м3
+      - products.first.product_properties.each do |p|
+        %td
+          = p.property_name
       %td
         руб. за м2
-      %td
-        руб. за м3
     - products.each do |product|
-      - product_properties = product.product_properties
       - if Spree::Config[:show_zero_stock_products] || product.has_stock?
         %tr
-          %td
-            = product.product_properties[2].value
-          %td
-            = product.product_properties[6].value
-          %td
-            = product.product_properties[5].value
-          %td
-            = product.product_properties[3].value
-          %td
-            = product.product_properties[0].value
-          %td
-            = product.product_properties[1].value
+          - product.product_properties.each do |product_property|
+            %td
+              = product_property.value
           %td
             = product.price
-          %td
-            = product.product_properties[7].value
