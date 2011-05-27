@@ -9,6 +9,7 @@ set :user, 'root'
 set :use_sudo, false
 set :deploy_to, "/var/www/spree_project/#{application}" # /home/myuser/myproject/deploy
 set :root_path, "/var/www/spree_project/"
+set :shared_host, "oooliderstroy.ru"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :app, "81.17.140.181"                          # Your HTTP server, Apache/etc
@@ -65,3 +66,34 @@ namespace :deploy do
 #     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
 #   end
 end
+
+# Update data
+namespace :update do
+  desc "Copy remote production shared files to localhost"
+  task :shared do
+    run_locally "rsync --recursive --times --rsh=ssh --compress --human-readable --progress #{user}@#{shared_host}:/var/www/spree_project/public/assets ../public"
+  end
+
+  desc "Dump remote production postgresql database, rsync to localhost"
+  task :postgresql do
+    get("/var/www/spree_project/config/database.yml", "tmp/database.yml")
+
+    remote_settings = YAML::load_file("tmp/database.yml")["production"]
+    local_settings  = YAML::load_file("config/database.yml")["development"]
+
+    run "export PGPASSWORD=#{remote_settings["password"]} && pg_dump --host=#{remote_settings["host"]} --port=#{remote_settings["port"]} --username #{remote_settings["username"]} --file #{current_path}/tmp/#{remote_settings["database"]}_dump -Fc #{remote_settings["database"]}"
+
+    run_locally "rsync --recursive --times --rsh=ssh --compress --human-readable --progress #{user}@#{shared_host}:#{current_path}/tmp/#{remote_settings["database"]}_dump tmp/"
+
+    run_locally "dropdb -U #{local_settings["username"]} --host=#{local_settings["host"]} --port=#{local_settings["port"]} #{local_settings["database"]}"
+    run_locally "createdb -U #{local_settings["username"]} --host=#{local_settings["host"]} --port=#{local_settings["port"]} -T template0 #{local_settings["database"]}"
+    run_locally "pg_restore -U #{local_settings["username"]} --host=#{local_settings["host"]} --port=#{local_settings["port"]} -d #{local_settings["database"]} tmp/#{remote_settings["database"]}_dump"
+  end
+
+  desc "Dump all remote data to localhost"
+  task :all do
+    update.shared
+    update.postgresql
+  end
+end
+
