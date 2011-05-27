@@ -5,7 +5,7 @@
 - elsif params.key?(:keywords)
   %h3= t(:search_results, :keywords => h(params[:keywords]))
 - if products.any?
-  %table{:border => 1}
+  %table.products_table{:border => 1}
     %tr
       %td
         Марка

@@ -1,3 +1,13 @@
+.products_table {
+  width: 100%;
+
+}
+
+.products_table td {
+  text-align: center;
+}
+
+
 .top_image {
  	background:url(images/kond_title.jpg);
 }
