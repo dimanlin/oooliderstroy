@@ -7,24 +7,17 @@
 - if products.any?
   %table.products_table{:border => 1}
     %tr
-      %td
-        Марка
-      %td
-        Диаметр
+      - products.first.product_properties.each do |p|
+        %td
+          = p.property_name
       %td
         Цена с НДС за 1 кг
-      %td
-        Производитель
     - products.each do |product|
       - product_properties = product.product_properties
       - if Spree::Config[:show_zero_stock_products] || product.has_stock?
         %tr
-          %td
-            = product.name
-          %td
-            = product.product_properties.first.value
+          - product.product_properties.each do |product_property|
+            %td
+              = product_property.value
           %td
             = product.price
-          %td
-            = product.product_properties.last.value
-
