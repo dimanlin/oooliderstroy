@@ -8,12 +8,16 @@
               .box-t2
                 .box-t3
             .box-1
-              %h1.title
-                = @taxon.name
-              .description
-                %p
-                  = image_tag(@taxon.icon.url(:normal), :style => "float: left;")
-                  = @taxon.description
+              .left_part
+                %h1.title
+                  = @taxon.name
+                .description
+                  %p
+                    = image_tag(@taxon.icon.url(:normal), :style => "float: left;")
+                    = @taxon.description
+              .right_part
+                = image_tag "print.png", :onclick => "window.print();"
+              .clear
             .box-b1
               .box-b2
                 .box-b3

@@ -1,3 +1,22 @@
+#yoo-zoo .box-1 .left_part {
+  margin-right:250px;
+  float:left;
+}
+
+#yoo-zoo .box-1 .right_part {
+  width:132px;
+  height:41px;
+  float:right;
+}
+
+.clear {
+  clear:both;
+}
+
+#yoo-zoo div.box-b1 {
+  overflow:hidden;
+}
+
 #yoo-zoo .row, #yoo-zoo .floatbox {
     overflow: hidden;
 }
