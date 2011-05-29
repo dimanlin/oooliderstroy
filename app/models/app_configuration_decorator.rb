@@ -16,7 +16,7 @@ AppConfiguration.class_eval do
   preference :show_only_complete_orders_by_default, :boolean, :default => false
   preference :admin_products_per_page, :integer, :default => 1000
   preference :admin_pgroup_preview_size, :integer, :default => 10
-  preference :products_per_page, :integer, :default => 10
+  preference :products_per_page, :integer, :default => 1000
   preference :logo, :string, :default => '/images/admin/bg/spree_50.png'
   preference :stylesheets, :string, :default => 'stylesheet.css,template.css,blue.css,category.css,layout.css,menus.css'
   preference :admin_interface_logo, :string, :default => "admin/bg/spree_50.png"
