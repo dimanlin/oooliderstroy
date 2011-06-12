@@ -9,10 +9,13 @@
     %tr
       %td
         Модель
-      %td
-        Охлаждение, кВт
-      %td
-        Нагрев, кВт
+      - if products.first.taxons.first.name == "Аксессуары"
+        %td{:colspan => 2}
+      - else
+        %td
+          Охлаждение, кВт
+        %td
+          Нагрев, кВт
       %td
         Цена,руб
 
