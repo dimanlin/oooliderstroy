@@ -25,10 +25,14 @@
         %tr
           %td
             = product.name
-          %td
-            = product.product_properties.last.value
-          %td
-            = product.product_properties.first.value
+          - if products.first.taxons.first.name == "Аксессуары"
+            %td{:colspan => 2}
+              = product.product_properties.last.value || product.product_properties.first.value
+          - else
+            %td
+              = product.product_properties.last.value
+            %td
+              = product.product_properties.first.value
           %td
             = product.price
 
