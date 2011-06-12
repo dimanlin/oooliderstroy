@@ -5,7 +5,7 @@
   %table{:style => "width: 100%"}
     %tr
       %td
-        - if taxon.parent.name == "Кондиционеры"
+        - if taxon.parent.name == "Кондиционеры" && taxon.icon?
           = image_tag taxon.icon.url(:normal)
       %td
         - if taxon.parent.name == "Кондиционеры"
